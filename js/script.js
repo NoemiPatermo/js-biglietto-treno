@@ -16,11 +16,11 @@ var prezzoOver = prezzo - scontoOver;
 
 //mostra il risultato(se sei minorenne se sei over e se sei nel range di else come età)
 if(y < 18 ){
-    document.getElementById('output').innerHTML = prezzoMinorenni;
+    document.getElementById('output').innerHTML = prezzoMinorenni + "€";
 }else{ if (y > 65){
-    document.getElementById('output').innerHTML = prezzoOver;
+    document.getElementById('output').innerHTML = prezzoOver + "€";
 }else{
-    document.getElementById('output').innerHTML = prezzo;
+    document.getElementById('output').innerHTML = prezzo + "€";
 }
 
 }

@@ -21,11 +21,11 @@ var prezzoOver = prezzo - scontoOver;
 
 //mostra il risultato(se sei minorenne se sei over e se sei nel range di else come età)
 if(age < 18 ){
-    document.getElementById('output').innerHTML = "Totale importo: " + Math.round(prezzoMinorenni) + " € ";
+    document.getElementById('ticket-price').innerHTML = "Totale importo: " + prezzoMinorenni + " € ";
 }else{ if (age > 65){
-    document.getElementById('output').innerHTML = "Totale importo: " + Math.round(prezzoOver) + " € ";
+    document.getElementById('ticket-price').innerHTML = "Totale importo: " + prezzoOver + " € ";
 }else{
-    document.getElementById('output').innerHTML = "Totale importo: " + Math.round(prezzo) +  " € ";
+    document.getElementById('ticket-price').innerHTML = "Totale importo: " + prezzo +  " € ";
 }
 
 }
